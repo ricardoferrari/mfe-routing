@@ -29,18 +29,11 @@ module.exports = {
         library: { type: "module" },
 
         // For remotes (please adjust)
-        // name: "simulate",
-        // filename: "remoteEntry.js",
-        // exposes: {
-        //     './Component': './projects/simulate/src/app/app.component.ts',
-        // },
-
-        // For hosts (please adjust)
-        // remotes: {
-        //     "shell": "http://localhost:4200/remoteEntry.js",
-        //     "home": "http://localhost:4201/remoteEntry.js",
-
-        // },
+        name: "simulate",
+        filename: "remoteEntry.js",
+        exposes: {
+            './Component': './projects/simulate/src/app/app.component.ts',
+        },
 
         shared: share({
           "@angular/core": { singleton: true, strictVersion: true, requiredVersion: 'auto' },
